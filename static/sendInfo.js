@@ -173,23 +173,8 @@ function gen_table(){
 
 
 var people_name={
-	"suchang"      : {'name':"苏畅"  ,'mail':"suchang@icrd.com.cn"    },
-	"luzhemin"     : {'name':"陆哲敏",'mail':"luzhemin@icrd.com.cn"  },
-	"muxuming"     : {'name':"穆旭明",'mail':"muxuming@icrd.com.cn"  },
-	"yangjiajia"   : {'name':"杨佳佳",'mail':"yangjiajia@icrd.com.cn"},
-	"yujimei"      : {'name':"余吉梅",'mail':"yujimei@icrd.com.cn"   },
-	"changqinhao"  : {'name':"常钦皓",'mail':"changqinhao@icrd.com.cn" },
-	"zhusaijuan"   : {'name':"朱赛娟",'mail':"zhusaijuan@icrd.com.cn"},
-	"huqixing"     : {'name':"胡起星",'mail':"huqixing@icrd.com.cn"  },
-	"shijieliang"  : {'name':"施杰梁",'mail':"shijieliang@icrd.com.cn" },
-	"guanzhichun"  : {'name':"管芷纯",'mail':"guanzhichun@icrd.com.cn" },
-	"liangbaojian" : {'name':"梁宝健",'mail':"liangbaojian@icrd.com.cn"},
-	"wangguan"     : {'name':"王冠"  ,'mail':"wangguan@icrd.com.cn"  },
-	"zhangqi"      : {'name':"张琪"  ,'mail':"zhangqi2@icrd.com.cn"   },
-	"zhaxuepeng"   : {'name':"查学鹏",'mail':"zhaxuepeng@icrd.com.cn"},
-	"xielicheng"   : {'name':"谢礼丞",'mail':"xielicheng@icrd.com.cn"},
-	"liuxiang"     : {'name':"刘祥"  ,'mail':"liuxiang@icrd.com.cn"  },
-	"xiajiaoyuan"  : {'name':"夏姣园",'mail':"xiajiaoyuan@icrd.com.cn" },
+	"xxx"      : {'name':"苏xx"  ,'mail':"suxxx@xxxx.com.cn"    },
+	"yyy"     : {'name':"陆xx",'mail':"luxxx@xxxx.com.cn"  },
 
 };
 
