@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"> 
+	<head>
+		<title>{{project_name}} {{sim_level}} 仿真时长热力图</title>
+		<link rel="stylesheet" type="text/css" href="/static/css_style.css">
+		<link rel="Shortcut Icon" href="/static/favicon.ico" type="image/x-icon" />
+		<script src="/static/sseAlert.js" charset="utf-8" ></script>
+		<script src="/static/echarts.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<span id="header_text">{{project_name}} {{sim_level}} 仿真时长热力图</span>
+				<img id="load_pic" src="/static/loading_pic.gif" alt="loading">
+
+			</div>
+			<div id="heatmap">
+
+			</div>
+			
+			<div class="footer">UVM仿真结果统计 @ 验证</div>
+		</div>
+		<script>
+			var project_name="{{project_name}}";var sim_level="{{sim_level}}";
+		</script>
+		<script src="/static/heatmap.js" charset="utf-8" ></script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"> 
+	<head>
+		<title>{{project_name}} {{sim_level}} 发送通知</title>
+		<link rel="stylesheet" type="text/css" href="/static/css_style.css">
+		<link rel="Shortcut Icon" href="/static/favicon.ico" type="image/x-icon" />
+		<script src="/static/sseAlert.js" charset="utf-8" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<span id="header_text">{{project_name}} {{sim_level}} 发送通知</span>
+				<img id="load_pic" src="/static/loading_pic.gif" alt="loading">
+			</div>
+			<div id="SendInfo">
+				<table class="SendInfoTable">
+					<tr>
+						<td class="startcheckboxtitle">ws在线状态</td>
+						<td class="startcheckboxtitle">ws发送状态</td>
+						<td class="startcheckboxtitle">选择数据</td>
+						<td class="startcheckboxtitle">操作</td>
+					</tr>
+					<tr>
+						<td class="startcheckbox" id="update_ws_people">
+						</td>
+						
+						<td class="startcheckbox" id="message_state">
+						</td>
+						
+						<td class="startcheckbox">
+							<input type="checkbox" id="start_before" name="start_before" checked />
+							<label for="start_before">仿真在时间段前开始</label><br>
+							<input type="checkbox" id="finish_betweeen" name="finish_betweeen"/>
+							<label for="finish_betweeen">仿真在时间段内开始并结束</label><br>
+							<input type="checkbox" id="finish_after" name="finish_after"/>
+							<label for="finish_after">仿真在时间段内开始未结束</label><br>
+							<input type="checkbox" id="start_after" name="start_after"/>
+							<label for="start_after">仿真在时间段后开始</label><br>
+							<input type="checkbox" id="start_unknow" name="start_unknow"/>
+							<label for="start_unknow">仿真开始时间未知</label><br>
+						</td>
+						
+						<td class="startcheckbox">
+							<input type="button" class="gen_button" id="gen_ulink" value="生成Ulink消息" ><span id="copydone">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span><br>
+							<input type="button" class="gen_button" id="gen_mail" value="生成Outlook邮件"><span id="maildone">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span><br>
+							<input type="button" class="gen_button" id="info_send" value="发送网页通知"  ><span id="infodone">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span><br>
+						</td>
+				
+
+					</tr>
+				</table>
+				
+
+
+			</div>
+
+			<div id="TableDiv">
+
+
+			</div>
+
+			
+			<div class="footer">UVM仿真结果统计 @ 验证</div>
+		</div>
+		<script>
+			var project_name="{{project_name}}";var sim_level="{{sim_level}}";
+		</script>
+		<script src="/static/sendInfo.js" charset="utf-8" ></script>
+	</body>
+</html>

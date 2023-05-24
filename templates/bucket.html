@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"> 
+	<head>
+		<title>{{project_name}} {{sim_level}} 分时段数据</title>
+		<link rel="stylesheet" type="text/css" href="/static/css_style.css">
+		<link rel="Shortcut Icon" href="/static/favicon.ico" type="image/x-icon" />
+		<script src="/static/sseAlert.js" charset="utf-8" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<span id="header_text">{{project_name}} {{sim_level}} 分时段仿真数据</span>
+				<img id="load_pic" src="/static/loading_pic.gif" alt="loading">
+				<div class="dropdown">
+					<button class="dropbtn" id="chart_button">仿真状态</button>
+					<div class="dropdown-content">
+						<a id="bar_state">仿真状态</a>
+						<a id="bar_result">仿真结果</a>
+						<a id="bar_group">人员分组</a>
+						<a id="sim_time">仿真时长</a>
+						<a href="/bucket/?project_name={{project_name}}&sim_level={{sim_level}}">分时段</a>
+						<a href="/server_info" id="other">其他</a>
+					</div>
+				</div>
+			</div>
+			<div id="SetTime">
+				<span class="SetTimeP">请选择一个时间段来查看仿真情况：</span>
+				<label for="time_st">开始时间：</label>
+				
+				<input type="datetime-local" id="time_st"
+					name="time_st" >
+				
+				
+				<label for="time_end">结束时间：</label>
+				
+				<input type="datetime-local" id="time_end"
+					name="time_end" >
+					
+				<input type="checkbox" id="time_now" name="time_now_check_box" />
+				<label for="time_now_check_box">现在</label>
+					
+				<input type="button" id="time_submit" value="刷新">
+				<br>
+				<input type="checkbox" id="time_more" name="time_more_info"/>
+				<label for="time_more_info">详细信息</label>
+				&emsp;&emsp;&emsp;&emsp;基于最后一次仿真统计&emsp;&emsp;图例：
+				<span class="time_sim">仿真中</span>&emsp;
+				<span class="time_pass">pass</span>&emsp;
+				<span class="time_s_pass">手动pass</span>&emsp;
+				<span class="time_fail">fail</span>&emsp;
+				<span class="time_s_fail">手动fail</span>&emsp;
+				<span class="time_unknow">unknow</span>&emsp;
+				<span class="time_ignore">废弃</span>&emsp;&emsp;
+				相关页面：<a href="/sendInfo/?project_name={{project_name}}&sim_level={{sim_level}}">发送通知</a>
+			</div>
+
+			<div id="TableDiv">
+
+
+			</div>
+
+			
+			<div class="footer">UVM仿真结果统计 @ 验证</div>
+		</div>
+		<script>
+			var project_name="{{project_name}}";var sim_level="{{sim_level}}";
+		</script>
+		<script src="/static/bucket.js" charset="utf-8" ></script>
+	</body>
+</html>

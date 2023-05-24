@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"> 
+	<head>
+		<title>{{testname}}详情</title>
+		<link rel="stylesheet" type="text/css" href="/static/css_style.css">
+		<link rel="Shortcut Icon" href="/static/favicon.ico" type="image/x-icon" />
+		<script src="/static/sseAlert.js" charset="utf-8" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				{{project_name}} {{sim_level}} {{testname}} 详情
+				<img id="load_pic" src="/static/loading_pic.gif" alt="loading">
+			</div>
+			
+			<div class="case_set">
+				<span id="s_state_text">获取数据中...</span>
+				<button class="s_state_normal" id="s_pass">手动PASS</button>
+				<button class="s_state_normal" id="s_fail">手动FAIL</button>
+				<button class="s_state_normal" id="s_ignore">废弃CASE</button>
+				<button class="s_state_normal" id="comment">添加备注</button>
+			</div>
+			
+			<div id="info_comment">
+				
+			</div>
+			
+			<div id="info_table">
+				
+			</div>
+			
+			<div id="input_label">
+				<span class="input_l">用户名: </span><br>
+				<input id="Q0" type="text"><br>
+				<span class="input_l">备注内容: </span><br>
+				<textarea cols="4" id="Q1"></textarea>
+				<br>
+				<button id="comment_button1" type="button" onclick="sendData()">提交</button>
+				<button id="comment_button2" type="button" onclick="CancelsendData()">取消</button>
+			</div>
+			
+			<div class="footer">UVM仿真结果统计 @ 验证</div>
+		</div>
+		<script>
+			var project_name="{{project_name}}";var sim_level="{{sim_level}}";var testname="{{testname}}";
+		</script>
+		<script src="/static/testcase.js" charset="utf-8" ></script>
+	</body>
+</html>
