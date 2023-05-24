@@ -20,24 +20,8 @@ sockets = Sockets(app)
 # message_queue = Queue()
 
 computer_names={
-	#"luzhemin"     : {"name":"陆哲敏","pc":"127.0.0.1" ,"ip":""},
-	"suchang"      : {"name":"苏畅"  ,"pc":"OA-PC-1403","ip":""},
-	"luzhemin"     : {"name":"陆哲敏","pc":"OA-PC-711" ,"ip":""},
-	"muxuming"     : {"name":"穆旭明","pc":"OA-PC-827" ,"ip":""},
-	"yangjiajia"   : {"name":"杨佳佳","pc":"OA-PC-865" ,"ip":""},
-	"yujimei"      : {"name":"余吉梅","pc":"OA-PC-695" ,"ip":""},
-	"changqinhao"  : {"name":"常钦皓","pc":"OA-PC-694" ,"ip":""},
-	"zhusaijuan"   : {"name":"朱赛娟","pc":"OA-PC-1117","ip":""},
-	"huqixing"     : {"name":"胡起星","pc":"OA-PC-1119","ip":""},
-	"shijieliang"  : {"name":"施杰梁","pc":"OA-PC-1166","ip":""},
-	"guanzhichun"  : {"name":"管芷纯","pc":"OA-PC-819" ,"ip":""},
-	"liangbaojian" : {"name":"梁宝健","pc":"OA-PC-1262","ip":""},
-	"wangguan"     : {"name":"王冠"  ,"pc":"OA-PC-1401","ip":""},
-	"zhangqi"      : {"name":"张琪"  ,"pc":"OA-PC-1370","ip":""},
-	"zhaxuepeng"   : {"name":"查学鹏","pc":"OA-PC-1467","ip":""},
-	"xielicheng"   : {"name":"谢礼丞","pc":"OA-PC-1130","ip":""},
-	"liuxiang"     : {"name":"刘祥"  ,"pc":"OA-PC-1561","ip":""},
-	"xiajiaoyuan"  : {"name":"夏姣园","pc":"OA-PC-1568","ip":""},
+	"xxx"      : {"name":"苏xx"  ,"pc":"OA-PC-xxx","ip":""},
+	"yyy"     : {"name":"陆xx","pc":"OA-PC-xxx" ,"ip":""},
 
 }
 
