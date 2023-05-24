@@ -1,0 +1,18 @@
+现象
+客户端连接ws时报错: werkzeug.routing.WebsocketMismatch: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+安装
+pip install flask_sockets
+
+安装以后手动修改
+路径：C:\Users\luzhemin351\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_sockets.py
+文件: flask_sockets.py
+函数: add_url_rule
+修改前:self.url_map.add(Rule(rule, endpoint=f))
+修改后:self.url_map.add(Rule(rule, endpoint=f, websocket=True))
+关于此问题的讨论参考:
+https://github.com/heroku-python/flask-sockets/issues/81
+关于此问题的修改参考:
+https://github.com/slipperstree/flask-sockets/commit/cb06c69db3af2cb52fbc050f3595ffa4100bbee3
+追记
+推荐大家使用 Flask-SocketIO，功能比flask_sockets强大，需要使用SocketIO的js库。可为用户分组，支持群发，单独发等功能。
